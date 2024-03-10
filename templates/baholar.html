@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baholar</title>
+</head>
+<body>
+   <div style="display: flex;flex-direction: column;align-items: center; justify-content: center; margin-top: 100px">
+       <h1>O'quvchi Bahosi</h1>
+       <h2><span style="color: blue;">{{baho.name}}</span> <span style="color: green">1-mezon</span> {{baho.1}} <span style="color: green">2-mezon</span> {{baho.2}} <span style="color: green">3-mezon</span> {{baho.3}}  <span style="color: red;">jami ball:</span> {{baho.jami}}</h2>
+        <button style="background-color: blue; padding: 10px;width: 100px; margin-right: 80px;border-radius: 20px; border: none;"><a style="text-decoration: none; color: white;" href="{% url 'pupil' %}">Orqaga</a></button>
+   </div>
+</body>
+</html>
