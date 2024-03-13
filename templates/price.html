@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baholar</title>
+</head>
+<body>
+   <div style="display: flex;flex-direction: column;align-items: center; justify-content: center; margin-top: 100px">
+       <h1>O'quvchi Oylar davomida olgan bahosi</h1>
+       <h2><span style="color: blue;">{{price.name}}</span></h2>
+       <p>1-oyda <span style="color: red; font-size: 18px;">{{price.exam}}</span> baho olgan</p>
+       <p>2-oyda <span style="color: red;">{{price.exam2}}</span> baho olgan</p>
+       <p>3-oyda <span style="color: red;">{{price.exam3}}</span> baho olgan</p>
+       <p>4-oyda <span style="color: red;">{{price.exam4}}</span> baho olgan</p>
+       <p>5-oyda <span style="color: red;">{{price.exam5}}</span> baho olgan</p>
+       <img width="200" height="200" src="{{ price.image }}">
+        <button style=" margin-top: 10px; background-color: blue; padding: 10px;width: 100px; margin-right: 0px;border-radius: 20px; border: none;"><a style="text-decoration: none; color: white;" href="{% url 'exam' %}">Orqaga</a></button>
+   </div>
+</body>
+</html>

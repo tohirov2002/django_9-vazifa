@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # my app
     'app_themes',
+    'app_pupils',
 ]
 
 MIDDLEWARE = [

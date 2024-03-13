@@ -8,13 +8,9 @@
     <div style="margin: 30px;">
         <h2>O'tilgan mavzular</h2>
         <ol>
-        <li>Aiogram</li>
-        <li>Onlein store bot</li>
-        <li>HTML AND CSS</li>
-        <li>Botstrap</li>
-        <li>javscript</li>
-        <li>Django</li>
-        <li>Templates</li>
+            {% for cor in covered %}
+                 <li><a href="{% url 'topic' cor.id %}" style="text-decoration: none;">{{cor.name}}</a></li>
+            {% endfor %}
     </ol>
         <button style="background-color: blue; padding: 10px;border-radius: 20px; border: none;"><a style="text-decoration: none; color: white;" href="{% url 'home' %}">Orqaga</a></button>
     </div>
